@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ACoVE-PATH TOOL v0.1</title>
+
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="https://js.arcgis.com/3.26/esri/css/esri.css">
+
+	<!-- libs -->
+	<script src="js/lib/d3-4.0.js"></script>
+	<script src="js/lib/jquery-1.12.4.js"></script>
+	<script src="js/lib/jquery-ui-1.12.1.js"></script>
+	<script src="js/lib/bootstrap-2.3.0.js"></script>
+	<script src="js/lib/jquery.mousewheel-3.0.6.js"></script>
+	<script src="js/lib/jquery.mcustomscrollbar.js"></script>
+	<script src="https://js.arcgis.com/3.26/"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/ACoVE-COO.css">
+
+	<!-- JS -->
+	<script src="js/lib/rcs.js"></script>
+	<script src="js/acove-data-config.js"></script>
+	<script src="js/mcoo.js"></script>
+	<script src="data/mcoo-areas-of-interest.js"></script>
+	<script src="js/mcoo-model.js"></script>
+	<script src="js/mcoo-events.js"></script>
+	<script src="js/mcoo-controller.js"></script>
+	<script src="js/mcoo-selection.js"></script>
+	<script src="js/mcoo-map.js"></script>
+	<script src="js/mcoo-area-controls.js"></script>
+
+</head>
+
+<body>
+	<div id="map">
+
+	</div>
+
+	<div id="control-panel">
+		<div id="logo">
+			<label id="header">MCOO</label>
+			<label id="header-subtitle">Modified Combined Obsticle Overlay</label>
+		</div>
+		<div id="area-of-interest-controls" class="control-container">
+			<label class="section-header">Area of Interest</label>
+			<div id="area-selection">
+				<label class="option-label">Select or add Area of Interest</label>
+				<button id="new-area-button" class="form-button">New Area</button>
+
+				<div id="new-area-controls">
+					<label id="new-area-header" class="option-label">Add New Area of interest</label>
+					<div id="new-area-input">
+						<label class="description-label">Name:</label>
+						<input id="new-area-name" class="form-input" type="text" />
+					</div>
+					<div id="new-area-map-options">
+						<button id="new-area-multipoint-poly-button" class="form-button">Freehand Polygon</button>
+						<button id="new-area-rectangle-button" class="form-button">Rectangle</button>
+						<button id="new-area-save-button" class="form-button">Save</button>
+						<button id="new-area-cancel-button" class="form-button">Cancel</button>
+					</div>
+
+				</div>
+
+				<div id="area-list">
+				
+				</div>
+			</div>
+
+		</div>
+		<button id="export" class="form-button">Export</button>
+
+		<div id="unit-controls">
+			<label class="section-header">Unit Controls</label>
+			<div id="unit-path-options">
+				<button id="unit-polyline" class="form-button">Polyline</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="draw-instructions">
+		IN DRAW STATE
+	</div>
+
+	<script>
+
+		// console.log(MCOOArea);
+		
+		
+	</script>
+
+</body>
+
