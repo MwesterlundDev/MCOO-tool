@@ -289,8 +289,8 @@ mcoo.model = (function () {
 			self.hostileUnits.push({
 				id: "H-1",
 				name: "Enemy Unit 1",
-				lat: 36.126508,
-				lng: 36.88722,
+				lat: 40.441704,
+				lng: -80.011027,
 				mobility: self.getMobilityByValue('wheeled'),
 				size: self.getSizeByValue('battalion'),
 				type: self.getTypeByValue('infantry'),
@@ -302,8 +302,8 @@ mcoo.model = (function () {
 				mobility: self.getMobilityByValue('dismounted'),
 				size: self.getSizeByValue('squad'),
 				type: self.getTypeByValue('special'),
-				lat: 36.183346,
-				lng: 37.209358,
+				lat: 40.516403,
+				lng: -79.999011
 			});
 
 
@@ -346,7 +346,7 @@ mcoo.model = (function () {
 
 
 
-					self.threaEts.push({
+					self.threats.push({
 						id: id,
 						distance: calculatedDistance,
 						attackAngle: attackAngle,
